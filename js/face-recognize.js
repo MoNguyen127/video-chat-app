@@ -6,7 +6,7 @@ async function setup() {
     await faceapi.nets.faceRecognitionNet.loadFromUri('/models');
     await faceapi.nets.faceExpressionNet.loadFromUri('/models');
 
-    const video = document.getElementById('inputVideo');
+    const video = document.getElementById('their-video');
 
     navigator.mediaDevices.getUserMedia({ video: {} })
         .then(stream => {
