@@ -16,7 +16,7 @@ async function setup() {
     video.addEventListener('play', () => {
         const canvas = faceapi.createCanvasFromMedia(video);
         document.body.append(canvas);
-        const displaySize = { width: video.width, height: video.height };
+        const displaySize = { width: 10, height: 10 };
         faceapi.matchDimensions(canvas, displaySize);
         
         setInterval(async () => {
